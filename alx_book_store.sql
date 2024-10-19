@@ -1,4 +1,3 @@
-CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE alx_book_store;
 CREATE TABLE Books(
        book_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -27,6 +26,7 @@ CREATE TABLE Customers(
 CREATE TABLE Orders (
     order_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_id INT,
+
     order_date DATE NOT NULL,
     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
         ON DELETE CASCADE
