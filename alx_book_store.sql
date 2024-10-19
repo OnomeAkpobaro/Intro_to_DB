@@ -33,7 +33,7 @@ CREATE TABLE Orders (
         ON UPDATE CASCADE
 );
 
-CREATE TABLE Order_details (
+CREATE TABLE Order_Details (
     orderdetailid INT PRIMARY KEY AUTO_INCREMENT,
     order_id INT,
     book_id INT,
